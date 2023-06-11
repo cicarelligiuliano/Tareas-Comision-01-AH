@@ -1,0 +1,12 @@
+Exportaciones e importaciones
+Ajax y fetch
+Argumentos de linea de comandos
+Minimist
+Yargs
+Dotenv
+
+
+Vamos a crear algunas consultas tipo Fetch con JSONplaceholder + async y await
+Hacer varios ejercicios para probar tanto process.argv, minimist y Yargs practicando todo los metodos
+
+

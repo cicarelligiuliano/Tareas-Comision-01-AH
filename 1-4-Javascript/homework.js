@@ -1,45 +1,38 @@
 //"a" debe ser un string con cualquier palabra
 
-let a = "hola"
-
+let a = 'hola';
 
 //"b" debe ser un numero
 
-let b = 12
-
+let b = 12;
 
 // "c" debe ser un booleano
 
-let c
-
+let c = true;
 
 // "d" debe ser "null"
 
-let d
-
+let d;
 
 // "e" debe ser undefined
 
 let e = 'Debo ser undefined!!!!!';
 
-
 // Declara una variable con el formato de fecha
 
-let date
-
+let date;
 
 // Crear una variable de tipo "error"
 
-let error
-
+let error;
 
 // Siendo frase1 y frase2 string, se debe modificar la declaracion de frase para que sea la combinacion de frase1 y frase2 junto con una variable "nombre" que sera el nombre del alumno
 
 const frase1 = 'Hola ';
 const frase2 = 'como estas? Mi nombre es Giuliano';
 
-let nombre
-let frase
+let nombre;
+let frase;
 
 //Siendo numero1 y numero2 numeros proporcionados, escribir las variables
 // sum que sera la suma de numero1 y numero2
@@ -50,10 +43,10 @@ let frase
 let numero1 = 10;
 let numero2 = 2;
 
-let sum
-let mult
-let div
-let op
+let sum;
+let mult;
+let div;
+let op;
 
 //Se creara una funcion que enviara un mensaje modificando "respuesta" siguiendo la siguiente logica:
 //Si a es mayor o igual a 20 enviara el mensaje "A es mayor o igual a 20"
@@ -66,7 +59,6 @@ const condicionalIf = (a, b, c) => {
     let respuesta = '';
 
     //Escribir la logica a partir de este punto
-   
 
     //No modificar la respuesta
     return respuesta;
@@ -74,17 +66,13 @@ const condicionalIf = (a, b, c) => {
 
 //Crearemos una calculadora, la cual recibira 2 numeros y un tercer parametro que definira la operacion a realizar, las cuales seran "SUMA", "RESTA", "DIVIDIR", y "MULTIPLICAR" en cualquier otro caso devolver "Error". (Utilizar "switch" para este ejercicio)
 
-const calculadora = (a, b, c) => {
-    
-};
+const calculadora = (a, b, c) => {};
 
 //Bucle for
 //Esta funcion recibira 2 numeros, el primero representara el valor inicial y el segundo la cantidad de veces que se multiplicara por 4 consecutivamente el resultado, es decir:
 //Si recibo 4 y 3 tendra en la primer iteracion 4*4=16, luego 16*4=64 y por ultimo 64*4=256
 
 const bucleFor = (a, b) => {
-   
-
     //No modificar luego de este punto
     return a;
 };
@@ -110,7 +98,6 @@ const bucleWhile = (a, b) => {
     let respuesta;
 
     // Codear apartir de aca
-    
 
     //No tocar el return, utilizar respuesta para el valor que devolveremos
     return respuesta;
