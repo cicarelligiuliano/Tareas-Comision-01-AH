@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 //En este archivo crearemos una clase que se encargará de manejar los productos pero trabajando con archivos
 //Esta clase alamacenara los productos en un archivo JSON dentro de la carpeta db en src.
 
@@ -8,7 +9,7 @@ const fs = require('fs');
 
 //Recordar utilizar JSON.stringify para guardar y JSON.parse al leer el archivo.
 
-//El metodo initialize debe ser llamado en el constructor de la clase.
+//El metodo initialize NO debe ser llamado en el constructor de la clase aunque esto seria lo ideal, para el test genera problemas.
 
 //Crearemos le metodo save el cual guardara los productos en nuestro archivo, este recibira como parametro un array de productos y los guardara en el archivo.
 
@@ -24,31 +25,8 @@ const fs = require('fs');
 
 //Crearemos el metodo deleteProduct el cual recibira un id y devolvera el mensaje "Se borro el elemento con el id ${id}", en el caso de que se envie un id que no exista devolvera el mensaje "Not Found".
 
-
-
 class ProductManager {
-    constructor(path) {
-        this.path = path;
-        this.products = [];
-        this.lastId = 0;
-        this.initialize();
-    }
-
-    initialize = () => {
-        if (fs.existsSync(path.join(__dirname, `../db/${this.path}`))) {
-            this.products = JSON.parse(fs.readFileSync(path.join(__dirname, '../db/products.json'), 'utf-8'));
-
-            if (this.products.length > 0) {
-                this.lastId = Math.max(...this.products.map((p) => p.id));
-            }
-        } else {
-            fs.writeFileSync(path.join(__dirname, `../db/${this.path}`), JSON.stringify(this.products));
-        }
-    };
-
-    save = (products) => {
-        fs.writeFileSync(path.join(__dirname, `../db/${this.path}`), JSON.stringify(products));
-    };
+    constructor(path) {}
 }
 
 module.exports = { ProductManager };
